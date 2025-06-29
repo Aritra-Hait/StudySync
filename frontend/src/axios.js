@@ -1,7 +1,10 @@
 import axios from "axios";
 
+const BASE_URL = (import.meta.env.MODE === "development") ? import.meta.env.VITE_API_BASE_URL : "/api";
+
+
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL,
+    baseURL: BASE_URL,
 });
 
 api.interceptors.request.use((config) => {
@@ -13,7 +16,7 @@ api.interceptors.request.use((config) => {
 });
 
 const calendarAPI = axios.create({
-    baseURL: `${import.meta.env.VITE_API_BASE_URL}/planner`,
+    baseURL: `${BASE_URL}/planner`,
 });
 
 calendarAPI.interceptors.request.use((config) => {

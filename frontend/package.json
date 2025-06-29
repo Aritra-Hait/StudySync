@@ -19,7 +19,8 @@
     "react-hot-toast": "^2.5.2",
     "react-medium-image-zoom": "^5.2.14",
     "react-modal": "^3.16.3",
-    "react-router": "^7.6.2"
+    "react-router": "^7.6.2",
+    "studysync": "file:.."
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
