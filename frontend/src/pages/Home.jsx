@@ -32,10 +32,10 @@ const HomePage = () => {
         <div className='min-h-screen'>
             <Navbar />
             <div className="flex md:justify-between">
-                <Link to="/subjects" className="btn btn-info m-6 text-lg">
+                <Link to="/subjects" className="btn btn-info m-3 md:m-6 text-lg">
                     <div className="flex"><FoldersIcon className="size-5 mt-1 mr-1" />Organize by Subject</div>
                 </Link>
-                <Link to="/createNote" className='btn btn-primary m-6 text-lg'>
+                <Link to="/createNote" className='btn btn-primary m-3 md:m-6 text-lg'>
                     <PlusIcon className='size-5' />
                     <span>New Note</span>
                 </Link>
