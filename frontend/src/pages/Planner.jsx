@@ -111,13 +111,13 @@ export default function CalendarPage() {
                     isOpen={modalIsOpen}
                     onRequestClose={() => setModalIsOpen(false)}
                     contentLabel="Task Details"
-                    className="bg-base-200 p-6 rounded shadow-md max-h-2xl max-w-3xl w-full outline-none z-[1000]"
+                    className="bg-base-200 p-6 rounded shadow-md max-h-2xl max-w-[95vw] lg:max-w-3xl w-full outline-none z-[1000]"
 
                     overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[1000]"
                 >
 
                     {selectedTask && (
-                        <div className="overflow-y-auto max-h-[80vh]">
+                        <div className="overflow-y-auto max-h-[80vh] ">
                             <div className="m-4 flex justify-between">
                                 <button
                                     onClick={(e) => { handleDelete(e, selectedTask._id) }}
