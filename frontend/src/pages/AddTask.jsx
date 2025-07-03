@@ -36,7 +36,7 @@ const AddTask = () => {
             });
 
             toast.success("Task added successfully!");
-            navigate("/planner");
+            navigate(-1);
         } catch (err) {
             console.log("Error adding task", err);
             if (err.response.status === 429) {
